@@ -14,7 +14,7 @@
     <header class="text-white">
         <nav class="navbar navbar-expand-lg bg-dark " data-bs-theme="dark">
             <div class="container-fluid text-white">
-                <a class="navbar-brand" href="#"><img class="logo" src="./img/duck.png" alt=""></a>
+                <a class="navbar-brand logo" href="#"><img  src="./img/duck.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon "> </span>
@@ -41,14 +41,15 @@
 
     <main class="container ">
         <!-- t-main -->
-        <div class="row">
+
+        <div class="row"> <!-- big row -->
 
 
             <div class="col-lg-8">
                 <div class="mt-3 d-flex justify-content-between mb-3 ">
 
                     <h3>Catalogo Libri </h3>
-                    <button class="btn bg-primary text-white">Aggiungi libro</button>
+                    <a class="btn bg-primary text-white" heref="">Aggiungi libro</a>
                 </div>
                 <div>
                     <table class="table table-striped ">
@@ -186,57 +187,117 @@
             <!-- row -->
 
 
-            <!-- Todo -->
-            <div class="col-lg-4 mt-3">
-                <div class="card">
-                    <div class="card-header">
-                        Todo
-                    </div>
-                    <div class="card-body ">
-                        <div class="card" style="">
 
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                                        <label class="form-check-label" for="checkDefault">
-                                            Chiamare sregreteria
-                                        </label>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                                        <label class="form-check-label" for="checkDefault">
-                                            Mandare avvisi prestiti scaduti
-                                        </label>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                                        <label class="form-check-label" for="checkDefault">
-                                            Ordinare nuovi libri
-                                        </label>
-                                </li>
-                            </ul>
+            <div class="col-lg-4">
+                <div class="row">
+                    <!-- Todo -->
+                    <div class="col-12">
+                        <div class=" card">
+                            <div class="card-header">
+                                Todo
+                            </div>
+                            <div class="card-body ">
+                                <div class="card" style="">
+
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="checkDefault">
+                                                <label class="form-check-label" for="checkDefault">
+                                                    Chiamare sregreteria
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="checkDefault">
+                                                <label class="form-check-label" for="checkDefault">
+                                                    Mandare avvisi prestiti scaduti
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="checkDefault">
+                                                <label class="form-check-label" for="checkDefault">
+                                                    Ordinare nuovi libri
+                                                </label>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
                         </div>
+                    </div>
 
+                    <!-- F.A.Q. -->
+                    <div class="col-12">
+
+                        <div class="card">
+                            <div class="card-header">
+                                F.A.Q.
+                            </div>
+                            <div class="card-body">
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                aria-expanded="false" aria-controls="flush-collapseOne">
+                                                Come aggiungere un libro?
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is
+                                                intended to demonstrate the <code>.accordion-flush</code> class. This is
+                                                the first item’s accordion body.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                                aria-expanded="false" aria-controls="flush-collapseTwo">
+                                               Come posso accedere all'anagrafica utente
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is
+                                                intended to demonstrate the <code>.accordion-flush</code> class. This is
+                                                the second item’s accordion body. Let’s imagine this being filled with
+                                                some actual content.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                                aria-expanded="false" aria-controls="flush-collapseThree">
+                                                Posso usare questa dashboard su mobile?
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is
+                                                intended to demonstrate the <code>.accordion-flush</code> class. This is
+                                                the third item’s accordion body. Nothing more exciting happening here in
+                                                terms of content, but just filling up the space to make it look, at
+                                                least at first glance, a bit more representative of how this would look
+                                                in a real-world application.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-4 mt-3">
-
-            <div class="card">
-                <div class="card-header">
-                    F.A.Q.
-                </div>
-                <div class="card-body">
-
-                </div>
-            </div>
-        </div>
+        </div> <!-- end big row -->
     </main>
 </body>
 
